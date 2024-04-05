@@ -5,7 +5,7 @@ project(ChessClock)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake")
 
 include(AddBoost)
-include(cotire)
+#include(cotire)
 
 option(BUILD_TESTS "Build unit tests" ON)
 option(CCLOCK_USE_KAI "Use KAI" OFF)
@@ -16,7 +16,6 @@ if (CCLOCK_USE_KAI)
 endif()
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
-
 
 include_directories(${Boost_INCLUDE_DIRS})
 message(STATUS "Boost Include: ${Boost_INCLUDE_DIRS}")
