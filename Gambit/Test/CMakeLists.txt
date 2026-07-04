@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake")
-include(cotire)
+#include(cotire)
 
 set(PROJECT_NAME GambitTest)
 
@@ -12,7 +12,6 @@ file(GLOB TEST_SOURCES "*.cpp")
 include_directories(${PROJECT_INCLUDE_DIR})
 
 add_executable(${PROJECT_NAME} ${TEST_SOURCES} ${ALL_HEADERS})
-cotire(${PROJECT_NAME})
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
     CXX_STANDARD 17

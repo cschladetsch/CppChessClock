@@ -25,7 +25,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
     CXX_EXTENSIONS OFF
 )
 
-cotire(${PROJECT_NAME})
+#cotire(${PROJECT_NAME})
 
 if (BUILD_TESTS)
     add_subdirectory(Test)

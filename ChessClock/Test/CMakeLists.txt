@@ -14,7 +14,7 @@ file(GLOB TEST_SOURCES
 include_directories(${PROJECT_INCLUDE_DIR})
 
 add_executable(${PROJECT_NAME} ${TEST_SOURCES} ${ALL_HEADERS})
-cotire(${PROJECT_NAME})
+#cotire(${PROJECT_NAME})
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
     CXX_STANDARD 20

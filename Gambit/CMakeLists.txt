@@ -7,7 +7,7 @@ set(PROJECT_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/Include)
 
 set(JSON_BuildTests OFF CACHE INTERNAL "")
 
-add_subdirectory(ThirdParty/crossguid)
+#add_subdirectory(ThirdParty/crossguid)
 add_subdirectory(${THIRD_PARTY}/json)
 
 file(GLOB ALL_SOURCES 
@@ -28,7 +28,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
     CXX_EXTENSIONS OFF
 )
 
-cotire(${PROJECT_NAME})
+#cotire(${PROJECT_NAME})
 
 if (BUILD_TESTS)
     add_subdirectory(Test)
